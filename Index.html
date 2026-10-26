@@ -1,20 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="theme-color" content="#f8f5f1">
+    <meta name="description" content="Portfolio de Mouna Saoui, développeuse web full-stack spécialisée en PHP, Laravel et JavaScript.">
+    <title>Mouna Saoui — Développeuse web full-stack</title>
     <link rel="stylesheet" href="Style.css">
     <script src="Script.js" defer></script>
 </head>
 <body>
-    <div>
-        <img src="" alt="">
-        <div>
-            <h1>Mouna Saoui</h1>
-            <h3>Full stack developper</h3>
-            <p>Ouarzazate, Maroc</p>
+    <header class="site-header">
+        <a class="wordmark" href="#accueil" aria-label="Mouna Saoui, accueil">MOUNA <span>SAOUI</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="menu-toggle-label">Menu</span>
+            <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+            <a href="#projets">Projets</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#competences">Compétences</a>
+            <a class="nav-contact" href="#contact">Me contacter <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero page-shell" id="accueil">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> Portfolio · Ouarzazate, Maroc</p>
+                <h1>Portfolio<span class="title-period">.</span></h1>
+                <p class="hero-role">Développeuse web <em>full-stack</em></p>
+                <p class="hero-intro">Je transforme des idées en applications web claires et utiles, du premier écran jusqu’à la base de données.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projets">Découvrir mes projets <span aria-hidden="true">↓</span></a>
+                    <a class="text-link" href="mailto:mounasaoui2108@gmail.com">Échangeons <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="hero-meta">
+                    <span><span class="status-dot" aria-hidden="true"></span> En formation chez YouCode</span>
+                    <span>Français · English · العربية</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="portrait-orbit" aria-hidden="true"></div>
+                <span class="orbit-star orbit-star-one" aria-hidden="true">✳</span>
+                <span class="orbit-star orbit-star-two" aria-hidden="true">✦</span>
+                <img class="portrait" src="Images/MyPic.jpeg" alt="Portrait de Mouna Saoui">
+                <div class="experience-card">
+                    <span class="card-kicker">Mon univers</span>
+                    <strong>Code<br>avec intention.</strong>
+                    <span class="card-mark" aria-hidden="true">MS&nbsp; ↗</span>
+                </div>
+                <span class="portrait-caption">Curieuse par nature,<br>développeuse par passion.</span>
+            </div>
+            <div class="hero-index" aria-hidden="true">01 / 04</div>
+        </section>
+
+        <section class="contact-strip page-shell" aria-label="Coordonnées">
+            <a href="tel:+212634103744"><span class="strip-label">Téléphone</span><span>+212 634-103744</span></a>
+            <a href="mailto:mounasaoui2108@gmail.com"><span class="strip-label">Email</span><span>mounasaoui2108@gmail.com</span></a>
+            <a href="https://github.com/mouna243" target="_blank" rel="noreferrer"><span class="strip-label">GitHub</span><span>@mouna243 ↗</span></a>
+            <span class="strip-location"><span class="strip-label">Basée à</span><span>Ouarzazate, Maroc</span></span>
+        </section>
+
+        <section class="work-section page-shell section-space" id="projets">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> Une sélection de réalisations</p>
+                    <h2>Projets <em>choisis</em></h2>
+                </div>
+                <p class="section-note">Des projets personnels pour apprendre, expérimenter et construire des expériences utiles.</p>
+            </div>
+
+            <div class="project-layout">
+                <div class="project-grid">
+                    <article class="project-card project-card-lilac">
+                        <div class="project-art typing-art" aria-hidden="true">
+                            <span class="art-label">TYPING / 01</span>
+                            <span class="typing-word">focus<span>_</span></span>
+                            <span class="typing-stat">74 <small>WPM</small></span>
+                            <div class="typing-progress"><i></i></div>
+                            <div class="typing-keys"><i>Q</i><i>W</i><i>E</i><i>R</i><i>T</i><i>Y</i><i>U</i><i>I</i><i>O</i><i>P</i></div>
+                        </div>
+                        <div class="project-info">
+                            <div><span class="project-type">Projet front-end · 2025</span><h3>Jeu de vitesse de frappe</h3></div>
+                            <span class="project-number">01</span>
+                        </div>
+                        <p>Un jeu interactif pour mesurer sa vitesse et sa précision, avec des résultats affichés en temps réel.</p>
+                        <ul class="tag-list" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                    </article>
+
+                    <article class="project-card project-card-peach">
+                        <div class="project-art pixel-art" aria-hidden="true">
+                            <span class="art-label">PIXELQUEST / 02</span>
+                            <span class="pixel-spark">✦</span>
+                            <div class="game-cover game-cover-one"><span>01</span><i>✦</i></div>
+                            <div class="game-cover game-cover-two"><span>02</span><i>◈</i></div>
+                            <div class="game-cover game-cover-three"><span>03</span><i>△</i></div>
+                            <span class="game-caption">Find your next adventure</span>
+                        </div>
+                        <div class="project-info">
+                            <div><span class="project-type">Projet front-end · 2025</span><h3>PixelQuest</h3></div>
+                            <span class="project-number">02</span>
+                        </div>
+                        <p>Une application pour explorer des jeux vidéo, filtrer les résultats et sauvegarder ses favoris.</p>
+                        <ul class="tag-list" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>API</li><li>LocalStorage</li></ul>
+                    </article>
+
+                    <article class="project-card project-card-blue">
+                        <div class="project-art library-art" aria-hidden="true">
+                            <span class="art-label">BIBLIOTHÈQUE / 03</span>
+                            <span class="library-heading">Le goût<br>des histoires.</span>
+                            <div class="book book-one"></div><div class="book book-two"></div><div class="book book-three"></div>
+                            <span class="library-mark">LIVRES · EMPRUNTS · MEMBRES</span>
+                        </div>
+                        <div class="project-info">
+                            <div><span class="project-type">Projet back-end · 2025</span><h3>Gestion de bibliothèque</h3></div>
+                            <span class="project-number">03</span>
+                        </div>
+                        <p>Une application de gestion des livres, des emprunts et des utilisateurs, pensée autour de la programmation orientée objet.</p>
+                        <ul class="tag-list" aria-label="Technologies"><li>PHP</li><li>MySQL</li><li>UML</li></ul>
+                    </article>
+                </div>
+
+                <aside class="expertise-card" id="competences">
+                    <p class="eyebrow">Ce que je sais faire</p>
+                    <h2>Du front<br>au <em>back.</em></h2>
+                    <div class="expertise-item">
+                        <span class="expertise-icon" aria-hidden="true">01</span>
+                        <div><h3>Interfaces web</h3><p>HTML, CSS, JavaScript, TypeScript, React, Vue, Nuxt & TailwindCSS</p></div>
+                    </div>
+                    <div class="expertise-item">
+                        <span class="expertise-icon" aria-hidden="true">02</span>
+                        <div><h3>Développement back-end</h3><p>PHP, Laravel, Node.js et conception orientée objet</p></div>
+                    </div>
+                    <div class="expertise-item">
+                        <span class="expertise-icon" aria-hidden="true">03</span>
+                        <div><h3>Données & environnement</h3><p>MySQL, PostgreSQL, Docker, Nginx, Linux & Git</p></div>
+                    </div>
+                    <div class="expertise-foot"><span>Architecture MVC & N-Tier</span><span>UML · GitHub</span></div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="manifesto page-shell">
+            <div class="manifesto-monogram" aria-hidden="true">M<span>✳</span></div>
+            <div class="manifesto-copy">
+                <p class="eyebrow">Ma façon de voir le web</p>
+                <h2>Du code bien pensé.<br><em>Des expériences qui servent.</em></h2>
+                <p>J’aime donner vie à des applications accessibles et bien structurées, en gardant les besoins réels au centre de chaque décision.</p>
+            </div>
+            <div class="manifesto-stamp" aria-hidden="true"><span>APPRENDRE</span><b>✳</b><span>CONSTRUIRE</span></div>
+        </section>
+
+        <section class="journey-section page-shell section-space" id="parcours">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> Expérience & formation</p>
+                    <h2>En chemin <em>vers la suite.</em></h2>
+                </div>
+                <p class="section-note">Un parcours entre informatique, gestion et développement full-stack.</p>
+            </div>
+            <div class="journey-grid">
+                <article class="experience-panel">
+                    <span class="timeline-date">2024 · Stage</span>
+                    <span class="timeline-marker" aria-hidden="true"></span>
+                    <p class="timeline-label">Ministère de la Santé et de la Protection Sociale · Maroc</p>
+                    <h3>Développeuse web full-stack</h3>
+                    <p>Participation au développement d’une application de gestion des ressources humaines pour le ministère.</p>
+                    <span class="experience-tag">Expérience professionnelle</span>
+                </article>
+                <div class="education-list">
+                    <article class="education-item">
+                        <span class="education-year">2025 — Aujourd’hui</span>
+                        <div><h3>Programme Développement Web Full-Stack</h3><p>YouCode (UM6P) <span>· Safi, Maroc</span></p></div>
+                        <span class="education-symbol" aria-hidden="true">↗</span>
+                    </article>
+                    <article class="education-item">
+                        <span class="education-year">2022 — 2025</span>
+                        <div><h3>Licence professionnelle en informatique et gestion de l’entreprise</h3><p>Université Ibn Zohr <span>· Ouarzazate, Maroc</span></p></div>
+                        <span class="education-symbol" aria-hidden="true">↗</span>
+                    </article>
+                    <article class="education-item">
+                        <span class="education-year">2022</span>
+                        <div><h3>Baccalauréat en sciences physiques</h3><p>Lycée Anoual <span>· Option français</span></p></div>
+                        <span class="education-symbol" aria-hidden="true">↗</span>
+                    </article>
+                    <div class="language-row">
+                        <span class="language-title">Langues</span>
+                        <span>Arabe <small>Langue maternelle</small></span>
+                        <span>Anglais <small>B1 · courant</small></span>
+                        <span>Français <small>A2 · élémentaire</small></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer page-shell" id="contact">
+        <div class="footer-main">
+            <div class="footer-copy">
+                <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> Et maintenant ?</p>
+                <h2>Un projet en tête ?<br><em>Parlons-en.</em></h2>
+                <p>Je serais ravie d’échanger autour d’une idée, d’une collaboration ou d’une prochaine opportunité.</p>
+                <a class="button button-light" href="mailto:mounasaoui2108@gmail.com">Écrivez-moi <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="footer-details">
+                <a href="mailto:mounasaoui2108@gmail.com"><span class="footer-icon" aria-hidden="true">✉</span><span><small>Email</small>mounasaoui2108@gmail.com</span></a>
+                <a href="tel:+212634103744"><span class="footer-icon" aria-hidden="true">↗</span><span><small>Téléphone</small>+212 634-103744</span></a>
+                <a href="https://github.com/mouna243" target="_blank" rel="noreferrer"><span class="footer-icon" aria-hidden="true">⌘</span><span><small>GitHub</small>@mouna243</span></a>
+                <span class="footer-location"><span class="footer-icon" aria-hidden="true">⌖</span><span><small>Localisation</small>Ouarzazate, Maroc</span></span>
+            </div>
+            <div class="footer-portrait-wrap" aria-hidden="true">
+                <div class="footer-portrait-orbit"></div>
+                <img src="Images/MyPic.jpeg" alt="">
+                <span>À bientôt&nbsp; ✳</span>
+            </div>
         </div>
-    </div>
+        <div class="footer-bottom">
+            <a class="wordmark footer-wordmark" href="#accueil">MOUNA <span>SAOUI</span></a>
+            <span>Portfolio personnel · <span id="current-year">2026</span></span>
+            <a href="#accueil">Retour en haut ↑</a>
+        </div>
+    </footer>
 </body>
 </html>
