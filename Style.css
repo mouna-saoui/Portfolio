@@ -857,6 +857,12 @@ h2 em {
     margin-top: 38px;
 }
 
+.experience-list {
+    display: grid;
+    align-content: start;
+    gap: 16px;
+}
+
 .experience-panel {
     position: relative;
     align-self: start;
